@@ -7,11 +7,15 @@
 anchoredTrueWAP(high, low, close, true_range, period)
 }
 \arguments{
+\item{high}{Vector of High Values}
+
+\item{low}{Vector of Low Values}
+
+\item{close}{Vector of Close Values}
+
+\item{true_range}{Vector of True Range Values}
+
 \item{period}{Vector of bars since start of fixed period}
-
-\item{mid_val}{Vector of Mid values}
-
-\item{range_val}{Vector of Range values}
 }
 \value{
 Vector of Anchored TrueWAP values

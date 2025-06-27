@@ -2,10 +2,10 @@
 \alias{nikkei}
 \docType{data}
 \title{
-%%   ~~ data name/kind ... ~~
+nikkei
 }
 \description{
-%%  ~~ A concise (1-5 lines) description of the dataset. ~~
+An example data set of OHLCV data for Nikkei 225 (Osaka), Active Daily Continuation
 }
 \usage{data("nikkei")}
 \format{

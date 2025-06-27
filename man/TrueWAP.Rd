@@ -7,11 +7,15 @@
 TrueWAP(high, low, close, true_range, period)
 }
 \arguments{
+\item{high}{Vector of High Values}
+
+\item{low}{Vector of Low Values}
+
+\item{close}{Vector of Close Values}
+
 \item{true_range}{Vector of True Range Values}
 
 \item{period}{Rolling window length}
-
-\item{true_mid}{Vector of True Mid Values}
 }
 \value{
 Vector of TrueWAP values
