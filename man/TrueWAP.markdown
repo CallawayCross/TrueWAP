@@ -1,0 +1,30 @@
+```{=tex}
+\name{TrueWAP}
+\alias{TrueWAP}
+\title{Title TrueWAP}
+\usage{
+TrueWAP(high, low, close, true_range, period)
+}
+\arguments{
+\item{true_range}{Vector of True Range Values}
+
+\item{period}{Rolling window length}
+
+\item{true_mid}{Vector of True Mid Values}
+}
+\value{
+Vector of TrueWAP values
+}
+\description{
+Calculates True Range-Weighted Average Price (TrueWAP)
+}
+\examples{
+data(nikkei)
+TrueWAP(
+high = nikkei$High
+, low = nikkei$Low
+, close = nikkei$Close
+, true_range = nikkei$tr
+, period = 50)
+}
+```
