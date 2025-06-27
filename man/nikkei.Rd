@@ -40,15 +40,6 @@ An example data set of OHLCV data for Nikkei 225 (Osaka), Active Daily Continuat
     \item{\code{lags_mature_adiv}}{a numeric vector}
   }
 }
-\details{
-%%  ~~ If necessary, more details than the __description__ above ~~
-}
-\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-}
-\references{
-%%  ~~ possibly secondary sources and usages ~~
-}
 \examples{
 data(nikkei)
 ## maybe str(nikkei) ; plot(nikkei) ...

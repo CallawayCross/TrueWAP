@@ -2,7 +2,7 @@ Package: TrueWAP
 Type: Package
 Title: True Range-Weighted Average Price (TrueWAP)
 Version: 0.1.0
-Author: Joshua Callaway
+Author: Joshua Callaway [aut, cre]
 Maintainer: Joshua Callaway <Callaway@roar-analytics.com>
 Authors@R: person(given = "Joshua",
                       family = "Callaway",
