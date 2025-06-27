@@ -2,8 +2,10 @@
 #'
 #' @description Calculates Anchored True Range-Weighted Average Price (TrueWAP)
 #'
-#' @param mid_val Vector of Mid values
-#' @param range_val Vector of Range values
+#' @param high Vector of High Values
+#' @param low Vector of Low Values
+#' @param close Vector of Close Values
+#' @param true_range Vector of True Range Values
 #' @param period Vector of bars since start of fixed period
 #'
 #' @return Vector of Anchored TrueWAP values

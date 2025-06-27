@@ -2,7 +2,9 @@
 #'
 #' @description Calculates True Range-Weighted Average Price (TrueWAP)
 #'
-#' @param true_mid Vector of True Mid Values
+#' @param high Vector of High Values
+#' @param low Vector of Low Values
+#' @param close Vector of Close Values
 #' @param true_range Vector of True Range Values
 #' @param period Rolling window length
 #'
