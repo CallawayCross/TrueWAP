@@ -40,24 +40,9 @@ vwap_anchored <- anchoredVWAP(HLC3 = nikkei$HLC3, volume = nikkei$Volume, period
 true_wap_anchored <- anchoredTrueWAP(high = nikkei$High, low = nikkei$Low, close = nikkei$Close, true_range = nikkei$tr, period = nikkei$bars_since_segment)
 ```
 
-# Plot Results
-
-## Rolling TrueWAP
+# Rolling TrueWAP
 
 Overview: Calculated over a predetermined span (e.g., 50 bars), this version continuously updates its value using a “contextual midpoint” derived from both the previous close and the current bar’s high and low. This midpoint, referred to as the True Range midpoint, ensures that the latest volatility is fully incorporated into the averaged range-bound price.
-
-
-```{r plot_rolling, eval=TRUE}
-xts.nikkei.ohlcv <- xts(nikkei[c("Open", "High", "Low", "Close", "Volume")], order.by=as.Date(nikkei$Date))
-xts.twap <- xts(twap, order.by=as.Date(nikkei$Date))
-xts.vwap <- xts(vwap, order.by=as.Date(nikkei$Date))
-xts.true_wap <- xts(true_wap, order.by=as.Date(nikkei$Date))
-
-chartSeries(xts.nikkei.ohlcv, theme = chartTheme('white'), type = "candlesticks", subset = "last 27 months", name = "Nikkei 225 (Osaka), Active Daily Continuation", minor.ticks = TRUE)
-addTA(xts.twap, col = "blue", lty = 1, lwd = 3, on = 1)
-addTA(xts.vwap, col = "red", lty = 1, lwd = 3, on = 1)
-addTA(xts.true_wap, col = "darkgreen", lty = 1, lwd = 3, on = 1)
-```
 
 Interpretation: For each bar, the rolling TrueWAP identifies the upper boundary as the maximum of the
 previous close and the current high, and the lower boundary as the minimum of the previous close and
@@ -67,22 +52,9 @@ and normalizing by the total True Range, the indicator dynamically reflects both
 market volatility.
 
 
-## Anchored TrueWAP
+# Anchored TrueWAP
 
 Overview: This version begins at the open of the first bar in a defined period, anchoring the calculation from that point forward. Since no previous data exist for the initial bar, its own high/low values serve as the baseline. For subsequent bars, the calculation uses the previous close from within the period to compute subsequent True Range values. This method ensures that the measure reflects solely the actual observed range from the period’s inception.
-
-
-```{r plot_fixed, eval=TRUE}
-xts.nikkei.ohlcv <- xts(nikkei[c("Open", "High", "Low", "Close", "Volume")], order.by=as.Date(nikkei$Date))
-xts.twap_anchored <- xts(twap_anchored, order.by=as.Date(nikkei$Date))
-xts.vwap_anchored <- xts(vwap_anchored, order.by=as.Date(nikkei$Date))
-xts.true_wap_anchored <- xts(true_wap_anchored, order.by=as.Date(nikkei$Date))
-
-chartSeries(xts.nikkei.ohlcv, theme = chartTheme('white'), type = "candlesticks", subset = "last 27 months", name = "Nikkei 225 (Osaka), Active Daily Continuation", minor.ticks = TRUE)
-addTA(xts.twap_anchored, col = "blue", lty = 1, lwd = 3, on = 1)
-addTA(xts.vwap_anchored, col = "red", lty = 1, lwd = 3, on = 1)
-addTA(xts.true_wap_anchored, col = "darkgreen", lty = 1, lwd = 3, on = 1)
-```
 
 Interpretation: The anchored TrueWAP begins at the open of the defined period. On the first bar, due to the absence of prior data, the indicator uses the simple average of that bar’s high and low (hilo_mid) and calculates its range as (High-Low). For every subsequent bar, it adopts the “True Mid” and True Range calculated using data from the previous close within the period. This differentiation ensures that the indicator remains solely reflective of the period’s actual price movements and volatility.
 
