@@ -3,4 +3,7 @@ pkgdown: 2.1.3
 pkgdown_sha: ~
 articles:
   TrueWAP: TrueWAP.html
-last_built: 2025-07-07T15:47Z
+last_built: 2025-07-07T15:52Z
+urls:
+  reference: https://TrueWAP.r-lib.org/reference
+  article: https://TrueWAP.r-lib.org/articles
