@@ -3,7 +3,4 @@ pkgdown: 2.1.3
 pkgdown_sha: ~
 articles:
   TrueWAP: TrueWAP.html
-last_built: 2025-07-07T15:41Z
-urls:
-  reference: https://callawaycross.github.io/TrueWAP/reference
-  article: https://callawaycross.github.io/TrueWAP/articles
+last_built: 2025-07-07T15:47Z
