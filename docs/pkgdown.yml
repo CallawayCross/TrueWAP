@@ -1,6 +1,9 @@
 pandoc: 3.1.1
 pkgdown: 2.1.0
-pkgdown_sha: https://truewap.r-lib.org
+pkgdown_sha: ~
 articles:
   TrueWAP: TrueWAP.html
-last_built: 2025-07-07T17:05Z
+last_built: 2025-07-07T17:42Z
+urls:
+  reference: http://truewap.r-lib.org/reference
+  article: http://truewap.r-lib.org/articles
