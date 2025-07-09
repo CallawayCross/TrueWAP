@@ -1,17 +1,17 @@
 <urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
-<url><loc>http://truewap.r-lib.org/404.html</loc></url>
-<url><loc>http://truewap.r-lib.org/articles/TrueWAP.html</loc></url>
-<url><loc>http://truewap.r-lib.org/articles/index.html</loc></url>
-<url><loc>http://truewap.r-lib.org/authors.html</loc></url>
-<url><loc>http://truewap.r-lib.org/index.html</loc></url>
-<url><loc>http://truewap.r-lib.org/news/index.html</loc></url>
-<url><loc>http://truewap.r-lib.org/reference/TWAP.html</loc></url>
-<url><loc>http://truewap.r-lib.org/reference/TrueWAP.html</loc></url>
-<url><loc>http://truewap.r-lib.org/reference/VWAP.html</loc></url>
-<url><loc>http://truewap.r-lib.org/reference/anchoredTWAP.html</loc></url>
-<url><loc>http://truewap.r-lib.org/reference/anchoredTrueWAP.html</loc></url>
-<url><loc>http://truewap.r-lib.org/reference/anchoredVWAP.html</loc></url>
-<url><loc>http://truewap.r-lib.org/reference/index.html</loc></url>
-<url><loc>http://truewap.r-lib.org/reference/nikkei.html</loc></url>
+<url><loc>https://rstudio.github.io/truewap/404.html</loc></url>
+<url><loc>https://rstudio.github.io/truewap/articles/TrueWAP.html</loc></url>
+<url><loc>https://rstudio.github.io/truewap/articles/index.html</loc></url>
+<url><loc>https://rstudio.github.io/truewap/authors.html</loc></url>
+<url><loc>https://rstudio.github.io/truewap/index.html</loc></url>
+<url><loc>https://rstudio.github.io/truewap/news/index.html</loc></url>
+<url><loc>https://rstudio.github.io/truewap/reference/TWAP.html</loc></url>
+<url><loc>https://rstudio.github.io/truewap/reference/TrueWAP.html</loc></url>
+<url><loc>https://rstudio.github.io/truewap/reference/VWAP.html</loc></url>
+<url><loc>https://rstudio.github.io/truewap/reference/anchoredTWAP.html</loc></url>
+<url><loc>https://rstudio.github.io/truewap/reference/anchoredTrueWAP.html</loc></url>
+<url><loc>https://rstudio.github.io/truewap/reference/anchoredVWAP.html</loc></url>
+<url><loc>https://rstudio.github.io/truewap/reference/index.html</loc></url>
+<url><loc>https://rstudio.github.io/truewap/reference/nikkei.html</loc></url>
 </urlset>
 
