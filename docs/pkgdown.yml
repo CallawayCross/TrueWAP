@@ -5,5 +5,5 @@ articles:
   TrueWAP: TrueWAP.html
 last_built: 2025-07-07T17:42Z
 urls:
-  reference: http://truewap.r-lib.org/reference
-  article: http://truewap.r-lib.org/articles
+  reference: https://rstudio.github.io/truewap/reference
+  article: https://rstudio.github.io/truewap/articles
